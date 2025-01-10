@@ -1,10 +1,13 @@
 import Login from "@/components/Login";
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {BrowserRouter, Route, Router, Routes} from 'react-router-dom'
 
 export default function Home() {
   return (
-    <div>
-      <Login/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login/>}/>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
