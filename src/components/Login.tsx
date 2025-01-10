@@ -40,6 +40,8 @@ function Login() {
                 {/* <p>Forget Password?</p> */}
                 <button onClick={handleSubmit} className='bg-black text-white p-2 rounded-xl my-10'>Sign in</button>
             </div>
+            <div>{email}</div>
+            <div>{password}</div>
 
         </div>
 
